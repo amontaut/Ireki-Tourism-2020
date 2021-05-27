@@ -1,0 +1,448 @@
+/*
+Theme Name: hestia-child
+Description: Theme projet 2
+Author: Alice Montaut
+Author URI: https://irekitourism.alicemta.com
+Template: hestia
+Version: 1.0
+*/
+
+
+.blog-post .section-blog-info{
+	display: none;
+}
+
+.blog-post{
+	background: rgba(152, 186, 199, 0.3);
+}
+
+.col-md-10.col-md-offset-1/*titre en haut de chaque page*/{
+	background: rgba(28, 64, 104, .8);
+	width: 100%;
+	margin: auto;
+	border-radius: 30px;
+}
+
+.pfc-posts-main .pfc-post /*articles sur les pages*/ {
+	padding: 12px; 
+	border: 1px solid #1c4068;
+	background: rgba(152, 186, 199, 0.5);
+    box-shadow: 4px 4px 2px grey;
+}
+
+.pfc-posts-main .layout-one .news-text-wrap /*Quand un nouvel article s'ajoute*/ {
+	float: none;
+}
+
+.pfc-posts-main .pfc-post:hover{
+	box-shadow: none;
+}
+
+
+/* effet sur les images des articles sur les pages*/
+.news-thumb{
+	overflow: hidden;
+}
+
+.news-thumb img{
+	transition:0.5s;
+}
+
+.news-thumb img:hover{
+	transform: scale(1.2);
+	filter: opacity(85%);		
+}
+
+.wp-post-image{
+	padding-top: 2.8em;
+}
+
+/* articles*/
+.related-posts{
+	display: none;
+}
+
+.entry-categories{
+	display: none;
+}
+
+/*
+/*MENU PRINCIPAL
+*/
+#menu-menu-principal a /*couleur du menu en haut*/{
+	color: #000;
+}
+/*
+/* fin MENU PRINCIPAL
+*/
+
+/*
+/*PAGE D'ACCUEIL
+*/
+
+._mi._before.fa.fa-home /*icone maison à coté de accueil - menu principal */ {
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+/*Formatage bloc presentation avec les liens vers autres pages */
+.txt-intro{
+	font-size: 1.4em;
+	text-align: center;
+	padding-bottom: 1%;
+	margin-bottom: 2%;
+	border-bottom: 1px solid #1C4068;
+}
+
+.liens_accueil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	margin-bottom: 35px;
+}
+
+.actu, .plus-dinfos, .activites-du-mois, .contactez-nous {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #1C4068;
+    margin-bottom: 2%;
+    width: 24%;
+    padding-bottom: 1%;
+    font-size: 1.2em;
+}
+
+.actu img, .plus-dinfos img, .activites-du-mois img, .contactez-nous img {
+	display: flex;
+	margin: auto;
+	height: 10em;
+	width: auto;
+	border-radius: 50%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+  	transition: transform 0.7s ease;
+	filter: opacity(100%);
+}
+
+.actu img:hover, .plus-dinfos img:hover, .activites-du-mois img:hover, .contactez-nous img:hover{
+  	transform: scale(1.2);
+	filter: opacity(85%);
+}
+
+
+.actu a, .plus-dinfos a, .activites-du-mois a, .contactez-nous a {
+	padding-left: 5%;
+	padding-right: 5%;
+  	color: #1C4068;
+}
+
+
+.actu a:hover, .plus-dinfos a:hover, .activites-du-mois a:hover, .contactez-nous a:hover {
+	color: black;
+}
+
+.texte_liens{
+	text-align: center;
+ }
+ 
+.titre_liens{
+	text-transform: uppercase;
+	font-weight: bold; 
+	color: #1C4068;	
+  	text-align: center;
+}
+
+/*Mise en page de la page d'accueil */
+
+.row{
+	display: flex;
+	flex-direction: column;
+}
+
+.col-md-8 {
+    width: 100%;
+    text-align: center;
+}
+
+.col-md-3 {
+    width: 100%;
+    text-align: center;
+}
+
+.col-md-offset-2{
+  margin-left: 0; 
+}
+
+.pfc-posts-inner img /*image dernière actu*/ {
+	padding-top: 0;
+}
+
+
+/*
+/*fin PAGE ACCUEIL
+*/
+
+
+
+/*
+/*PAGE ACT DU MOIS
+*/
+
+/* TABLEAU activités*/ 
+.css-events-list thead{
+	background: #1c4068;
+	color: #E5E5E5;
+}
+
+.css-events-list .tableau_corps:hover{
+	background-color: rgba(152, 186, 199, 0.5);
+}
+
+.css-events-list table.events-table .td_description /*texte description tableau*/ {
+ 	text-align: justify;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.css-events-list /*marges à l'interieur du tableau*/ {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+}
+
+.bouton_form_inscription span /*couleur bouton inscription*/{
+	background-color: #3167a2;
+}
+
+
+/* fin TABLEAU activités*/ 
+
+/* FORMULAIRE pour s'incrire aux activités */
+
+#em-booking{
+	border: 1px solid #1c4068;
+	background: rgba(152, 186, 199, 0.5);
+    box-shadow: 4px 4px 2px grey;
+}
+
+#em-booking:hover{
+	box-shadow:none;
+}
+
+.em-booking-form-details{
+	width: 100%;
+}
+
+.em-booking-form-details .form-group:nth-child(2n) /*On enlève le champs commentaire*/{
+	display: none;
+}
+
+.em-booking-form-details .form-group:nth-child(4n) /*On enlève le champs téléphone*/{
+	display: none;
+}
+
+.col-md-offset-1 .blog-sidebar #pfcwidget-2 /*On enlève la dernière actualité sur la page du forumulaire pour les activités*/ {
+display: none;
+}
+/* fin FORMULAIRE pour s'incrire aux activités */
+
+/*
+/*fin PAGE ACT DU MOIS
+*/
+
+
+
+/*
+/*PAGE CONTACT
+*/
+
+label{
+	width: 80%;
+	text-align: left;
+}
+
+.format_date{
+	width: 80%;
+	text-align: left;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+span.wpcf7-list-item{
+	width: 100%;
+	margin: 0; 
+}
+
+#wpcf7-f303-p33-o1 /*Mise en forme du cadre forumulaire contact*/ {
+	border: 1px solid #1c4068;
+	background: rgba(152, 186, 199, 0.5);
+	margin-bottom: 12px;
+	padding: 15px;
+  	width: 50%;
+  	margin : auto;
+  	box-shadow: 4px 4px 2px grey;
+}
+
+#wpcf7-f303-p33-o1:hover{
+	box-shadow: none;
+}
+
+.form-group .form-control, input/*champs du formulaire*/{
+	margin-top: 1%;
+	border: 1px black solid;
+	border-radius: 8px;
+}
+
+.form-group .form-control:focus /*champs du formulaire*/{
+	border: 2px black solid;
+}
+
+
+
+/*
+/*fin PAGE CONTACT
+*/
+
+
+/*
+/*FOOTER
+*/
+#synved_social_follow-2{
+	margin-bottom: 0;
+}
+
+.footer .col-md-4{
+	width: 100%;
+	text-align: center; 
+}
+
+footer.footer.footer-black h5{
+	font-size: 14px;
+	margin: 4px;
+}
+
+footer.footer.footer-black{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.synved-share-image {
+	border-radius: 50%;
+}
+
+.synved-social-button {
+	margin-bottom: 0;
+}
+
+.footer .col-md-4{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.footer-big ul{
+	width: 100%;
+}
+
+#text-2 .textwidget p /*texte ajouté dans le pied de page*/{
+	color: #FFF;
+}
+
+/*
+/*fin FOOTER
+*/
+
+@media screen and (min-width: 570px){
+	.nom_pour_tel /*j'enlève un champ uniquement visible sur tel*/{
+      display:none;
+  }
+}
+
+/*
+/*Pour TABLETTE
+*/
+
+@media screen and (max-width: 768px){
+	/*page contact */
+  	#wpcf7-f303-p33-o1{
+		width: 100%;
+	}
+}
+/*
+/*fin TABLETTE
+*/
+
+
+
+/*
+/*Pour TEL
+*/
+@media screen and (max-width: 570px){
+  	/*page ACCUEIL */
+	.liens_accueil{
+		flex-direction: column;
+	}	
+	.actu, .plus-dinfos, .activites-du-mois, .contactez-nous{
+		width: 100%;
+	}
+	.carousel_images{
+		width: 100%;
+		height: auto;
+		margin-top: 10px;
+		margin-bottom: 10px; 
+	}
+    
+    /*pages INFOS ET ACTU */
+    .pfc-posts-main .layout-one .news-text-wrap{
+        padding-left: 0;
+        padding-top: 165px;	
+    }
+
+    .pfc-posts-main .pfc-post.layout-one .news-thumb{
+        width: 100%;
+    }
+  
+    .wp-post-image{
+      padding-top: 0;
+  	}
+  	
+  	/*page ACTIVITE DU MOIS (tableau)*/
+
+    tr /*Je met les lignes en flex pour les avoir en colonne*/ {
+        display: flex;
+        flex-direction: column;
+    }
+
+    thead /*J'enlève le head qui n'apparait qu'1 fois donc que pour la 1ere act et pas correctement*/ {
+        display: none;
+    }
+
+    td /*J'affiche les éléments d'une case en colonne*/ {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nom_pour_tel /*Je créé comme un head a chaque case pour avoir le titre de la colonne a chaque activité*/{
+        text-align: center;
+        background: #1c4068;
+        color: white;
+    }
+
+    .tableau_corps/*formatage du tableau*/{
+        border: solid 1px black;
+        padding : 10px;
+        margin-bottom: 10px;
+    }
+  
+  	table > tbody > tr:last-child, .table > tbody > tr:last-child /*Formatage dernier trait tableau qui est a 0 par défaut*/ {
+		border-bottom: 1px solid black;
+	}
+
+  	/*FOOTER */
+  	.footer .col-md-4{
+ 		 flex-direction: column;
+  	}
+}
+/*
+/*fin TEL
+*/
+
