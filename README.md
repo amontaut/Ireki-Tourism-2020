@@ -21,3 +21,5 @@ The main features are :
 In this repo you will only find : 
 - the user guide of the website (supposed to be given to the guys working at the tourist office) (in french) 🥖 
 - the additionnal CSS file
+
+The website was once hosted but isn't anymore 🤡
