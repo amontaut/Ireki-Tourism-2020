@@ -23,3 +23,5 @@ In this repo you will only find :
 - the additionnal CSS file
 
 The website was once hosted and online but isn't anymore 🤡
+
+![GitHub repo size](https://img.shields.io/github/repo-size/amontaut/Ireki-Tourism-2020?style=for-the-badge)
